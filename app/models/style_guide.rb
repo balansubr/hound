@@ -42,7 +42,6 @@ class StyleGuide
     Rubocop::Cop::Style::SpaceInsideHashLiteralBraces,
     Rubocop::Cop::Style::SpaceInsideParens,
     Rubocop::Cop::Style::StringLiterals,
-    Rubocop::Cop::Style::SymbolName,
     Rubocop::Cop::Style::Tab,
     Rubocop::Cop::Style::TrailingBlankLines,
     Rubocop::Cop::Style::TrailingWhitespace,

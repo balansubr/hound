@@ -187,10 +187,6 @@ StringLiterals:
   EnforcedStyle: single_quotes
   Enabled: true
 
-SymbolName:
-  Description: 'Symbol literals should use snake_case.'
-  Enabled: true
-
 Tab:
   Description: 'No hard tabs.'
   Enabled: true
