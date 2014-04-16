@@ -38,7 +38,7 @@ MethodDefParentheses:
   Enabled: true
 
 DotPosition:
-  Style: 'leading'
+  EnforcedStyle: 'leading'
   Enabled: false
 
 EmptyLineBetweenDefs:
