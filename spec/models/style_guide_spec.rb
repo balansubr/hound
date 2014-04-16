@@ -149,20 +149,17 @@ describe StyleGuide, '#violations' do
 
     describe 'multiline method chaining' do
       it 'does not have violation' do
-        content = <<-CONTENT.strip_heredoc.gsub(/\n\Z/)
-        foo.
-          bar.
-          baz
-        CONTENT
-        puts violations_in(content)
+        content = <<-EOL.strip_heredoc.gsub(/\n\Z/)
+          foo.
+            bar.
+            baz
+        EOL
         expect(violations_in(content)).to be_empty
       end
 
       it 'has violation' do
         pending
-        violation = <<-VIOLATION.strip_heredoc
-          For multiline method invocations, place the . at the end of each line
-        VIOLATION
+        violation = 'For multiline method invocations, place the . at the end of each line'
         expect(violations_in("foo\n.bar\n.baz")).to eq [
           violation
         ]
@@ -171,15 +168,15 @@ describe StyleGuide, '#violations' do
 
     describe 'empty line between methods' do
       it 'does not have violation' do
-        content = <<-CONTENT.strip_heredoc.gsub(/\n\Z/)
-        def foo
-          bar
-        end
+        content = <<-EOL.strip_heredoc.gsub(/\n\Z/)
+          def foo
+            bar
+          end
 
-        def bar
-          foo
-        end
-        CONTENT
+          def bar
+            foo
+          end
+        EOL
         expect(violations_in(content)).to be_empty
       end
 
