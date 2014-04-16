@@ -26,7 +26,6 @@ class StyleGuide
     Rubocop::Cop::Style::RedundantBegin,
     Rubocop::Cop::Style::RedundantReturn,
     Rubocop::Cop::Style::RedundantSelf,
-    Rubocop::Cop::Style::SingleLineBlockParams,
     Rubocop::Cop::Style::SpaceAfterColon,
     Rubocop::Cop::Style::SpaceAfterComma,
     Rubocop::Cop::Style::SpaceAfterControlKeyword,
