@@ -160,8 +160,11 @@ describe StyleGuide, '#violations' do
 
       it 'has violation' do
         pending
+        violation = <<-VIOLATION.strip_heredoc
+          For multiline method invocations, place the . at the end of each line
+        VIOLATION
         expect(violations_in("foo\n.bar\n.baz")).to eq [
-          'For multiline method invocations, place the . at the end of each line'
+          violation
         ]
       end
     end
