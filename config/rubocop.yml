@@ -104,7 +104,7 @@ ParenthesesAroundCondition:
                  if/unless/while.
   Enabled: true
 
-ReduceArguments:
+SingleLineBlockParams:
   Description: 'Name reduce arguments |a, e| (accumulator, element)'
   Enabled: true
 
