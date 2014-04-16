@@ -34,14 +34,7 @@ ConstantName:
   Description: 'Constants should use SCREAMING_SNAKE_CASE.'
   Enabled: true
 
-DefWithParentheses:
-  Description: 'Use def with parentheses when there are arguments.'
-  Enabled: true
-
-DefWithoutParentheses:
-  Description: >
-                 Omit the parentheses when the method doesn't accept
-                 any arguments.
+MethodDefParentheses:
   Enabled: true
 
 DotPosition:
