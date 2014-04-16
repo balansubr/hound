@@ -124,17 +124,10 @@ SpaceAroundOperators:
   Description: 'Use spaces around operators.'
   Enabled: true
 
-SpaceAroundBlockBraces:
-  Description: >
-                 Checks that block braces have or don't have surrounding space.
-                 For blocks taking parameters, checks that the left brace has
-                 or doesn't have trailing space.
-  # Valid values are: space_inside_braces, no_space_inside_braces
-  EnforcedStyle: space_inside_braces
-  # Valid values are: space, no_space
-  EnforcedStyleForEmptyBraces: no_space
-  # Space between { and |. Overrides EnforcedStyle if there is a conflict.
-  SpaceBeforeBlockParameters: true
+SpaceBeforeBlockBraces:
+  Enabled: true
+
+SpaceInsideBlockBraces:
   Enabled: true
 
 SpaceInsideParens:
